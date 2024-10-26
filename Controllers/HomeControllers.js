@@ -28,7 +28,7 @@ const leerPublicaciones = async (req, res) => {
         console.log('datos del usuario actual', currentUser);
         console.log('publicaciones con datos del usuario', urls);
         
-        return res.render('Publicandoymas', { 
+        return res.render('PublicandoYMas', { 
             urls,  // Enviamos las publicaciones con los datos del usuario poblados
             user: currentUser,
             telefono: currentUser.telefono,
