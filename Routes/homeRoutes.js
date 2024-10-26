@@ -4,6 +4,7 @@ const { agregarPost, leerPublicaciones, prepararTerreno, crearSiembra, crearFert
 const Verificaruser = require('../Middleware/Verificaruser')
 const { insertarCosecha, insertarPlantacion, obtenerCosechas, obtenerPlantaciones, insertarCultivo, obtenerTodasTablas } = require('../Controllers/ActividadesControllers')
 const router=app.Router()
+router.get('/',cargalogin)
 router.get('/principal',Verificaruser,cargahome)
 router.get('/publicandoymas',Verificaruser,leerPublicaciones)
 router.get('/Acciones',Verificaruser,cargarActividades)
