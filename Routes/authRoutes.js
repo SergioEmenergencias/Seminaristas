@@ -4,7 +4,7 @@ const{ cargalogin, cargarRegister }= require('../Controllers/CargaControllers')
 const router=app.Router();
 
 router.post("/login",sesiones);
-router.get('/',cargalogin)
+router.get('/login',cargalogin)
 router.post('/register',insertarUsuarios)
 router.get('/register',cargarRegister)
 router.get('/logout',cerrarsesion)
