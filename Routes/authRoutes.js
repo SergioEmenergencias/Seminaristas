@@ -5,7 +5,7 @@ const router=app.Router();
 
 router.post('/login',sesiones);
 router.get('/login',(req,res)=>{
-  res.render('login)
+  res.render('login')
 })
 router.post('/register',insertarUsuarios)
 router.get('/register',cargarRegister)
