@@ -57,9 +57,7 @@ passport.deserializeUser(async (user, done) => {
 // Configuración de Handlebars
 const hbs = create({
     extname: 'hbs',
-    layoutsDir: 'Views/Layouts', // Esta debe ser una cadena
-    partialsDir: 'Views/Components', // También debe ser una cadena
-    defaultLayout: 'main' // Nombre del archivo de layout sin la extensión
+    partialsDir: ['Views/Components']
 });
 app.engine('hbs', hbs.engine);
 app.set('view engine', 'hbs');
