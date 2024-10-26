@@ -77,11 +77,11 @@ const venta = async (req, res) => {
 };
 
 const cargalogin = (req, res) => {
-    res.render('login', { messages: req.flash('success'), user: req.user });
+    res.render('login', { messages: req.flash('success') });
 };
 
 const cargarRegister=(req,res)=>{
-    res.render('register',{messages: req.flash('success'),user:req.user })
+    res.render('register',{messages: req.flash('success') })
 }
 const cargahome=(req,res)=>{
     res.render('home',{user:req.user} )
