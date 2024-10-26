@@ -91,5 +91,5 @@ app.use(express.static(__dirname + '/public'));
 // Levantar el servidor
 const PORT = process.env.PORT || 3000; // Default por si falta la variable PORT
 app.listen(PORT, () => {
-    console.log(`Escuchando en el puerto http://localhost:${PORT}/auth/login`);
+    console.log(`Escuchando en el puerto http://localhost:${PORT}/auth/`);
 });
