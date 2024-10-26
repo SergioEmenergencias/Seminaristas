@@ -27,6 +27,7 @@ router.get('/produccion',Verificaruser,produccion)
 router.get('/venta',Verificaruser,venta)
 router.get('/tablas',Verificaruser,obtenerTodasTablas)
 
+router.post('foros',Verificaruser,crearPost)
 router.post('/publicandoymas',Verificaruser,agregarPost)
 router.post('/preparacionTerreno',Verificaruser,prepararTerreno)
 router.post('/siembra',Verificaruser,crearSiembra)
