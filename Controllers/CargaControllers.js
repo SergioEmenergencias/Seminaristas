@@ -76,9 +76,10 @@ const venta = async (req, res) => {
     }
 };
 
-const cargalogin=(req,res)=>{
-    res.render('login',{messages: req.flash('success'),user:req.user })
-}
+const cargalogin = (req, res) => {
+    res.render('login', { messages: req.flash('success'), user: req.user });
+};
+
 const cargarRegister=(req,res)=>{
     res.render('register',{messages: req.flash('success'),user:req.user })
 }
