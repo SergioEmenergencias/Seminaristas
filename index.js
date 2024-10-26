@@ -66,16 +66,8 @@ app.set('view engine', 'hbs');
 app.set('views', './Views');
 
 
-
-app.engine('hbs', hbs.engine);
-app.set('view engine', 'hbs');
-app.set('views', './Views');
-
-
 // Middleware para leer datos del formulario
 app.use(express.urlencoded({ extended: false }));
-
-
 
 // Middleware para manejar JSON
 app.use(express.json());
@@ -83,7 +75,6 @@ app.use(express.json());
 // Rutas principales
 app.use('/auth', require('./Routes/authRoutes'));
 app.use('/', require('./Routes/homeRoutes'));
-
 
 // Archivos estáticos
 app.use(express.static(__dirname + '/public'));
