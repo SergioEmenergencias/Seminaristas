@@ -94,10 +94,10 @@
     // Función para calcular el costo total
     function calcularCostoTotal() {
         // Obtener los valores de los campos
-        const cantidadQuimicos = parseFloat(document.getElementById('cantidad_quimicos').value) || 0;
+        const cantidadQuimicos = parseFloat(document.getElementById('costoInsumo').value) || 0;
         const costoQuimico = parseFloat(document.getElementById('costo_quimico').value) || 0;
-        const cantidadJornales = parseFloat(document.getElementById('cantidad_jornales').value) || 0;
-        const costoJornal = parseFloat(document.getElementById('costo_jornal').value) || 0;
+        const cantidadJornales = parseFloat(document.getElementById('jornales').value) || 0;
+        const costoJornal = parseFloat(document.getElementById('costoJornal').value) || 0;
 
         // Calcular el costo total
         const costoTotal = (cantidadQuimicos * costoQuimico) + (cantidadJornales * costoJornal);
